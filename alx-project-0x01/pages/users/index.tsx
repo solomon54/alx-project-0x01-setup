@@ -6,12 +6,6 @@ import { compile } from "tailwindcss";
 
 const Users: React.FC<{ posts: UserProps[] }> = ({ posts }) => {
   console.log(posts);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-
-  const handleOpenModal = () => setIsModalOpen(true);
-  const handleCloseModal = () => setIsModalOpen(false);
-
   return (
     <div className="flex flex-col h-screen">
       <Header />
@@ -19,14 +13,14 @@ const Users: React.FC<{ posts: UserProps[] }> = ({ posts }) => {
         <div className="flex justify-between">
           <h1 className=" text-2xl font-semibold">User Content</h1>
           <button
-            onClick={handleOpenModal}
-            className="bg-blue-700 px-4 py-2 rounded-full text-white"
+
+            className="bg-blue-700 px-4 py-2 rounded-full text-white cursor-pointer"
           >
             Add User
           </button>
         </div>
         <div className="grid grid-cols-3 gap-2 ">
-          {posts?.map(
+          {posts.map(
             (
               {
                 name,
