@@ -69,5 +69,5 @@ export interface UserData {
 // Represents the props for your UserModal component
 export interface UserModalProps {
   onClose: () => void; // Function to close the modal
-  onSubmit: (user: UserData) => void; // Function to handle submitted user data
+  onSubmit: (post: UserProps) => void; // Function to handle submitted user data
 }
