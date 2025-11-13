@@ -1,5 +1,5 @@
 import Header from "@/components/layout/Header";
-const Home: React.FC=()=>{
+const Home: React.FC = () => {
   return(
 
     <div className="flex justify-center items-center h-screen">
