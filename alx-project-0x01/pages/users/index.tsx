@@ -1,1 +1,1 @@
-//user components
+import Header from "@/components/layout/Header";

@@ -1,1 +1,1 @@
-//posts component
+import Header from "@/components/layout/Header";
